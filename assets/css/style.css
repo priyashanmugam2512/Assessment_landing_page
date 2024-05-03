@@ -1,0 +1,119 @@
+*{font-family: Lato, sans-serif;}
+body{margin:0px;}
+/* header start */
+header{display: flex; justify-content: center;}
+header h1{margin: 10px 0px;}
+header img{width:30px;height:30px;}
+header figure{margin: 12px;}
+/* header end */
+/* banner section start */
+.banner_background{background-image: url(../images/banner-background.jpg);background-position: center center;background-repeat: no-repeat;background-size: cover;position: relative;height: 445px;}
+.content_section{padding: 20px 0px 70px 0px; width: 100%; max-width: 1200px;margin: 0px auto;}
+.content_section h1{font-size :66px;line-height:70px;font-style :normal;font-weight :700;color:#ffffff;width: 600px;}
+.content_section p{font-size:26px;font-style:normal;font-weight :700;color:#ffffff;line-height: 30px;}
+.button_section a ,.offer_catalouge a,.special_banner a{font-size: 14px;font-style:normal;font-weight :700;padding: 15px 20px;text-decoration: none;display: inline-block;text-transform: uppercase;}
+.button_section .shop_btn,.offer_catalouge .shop_btn,.special_banner .shop_btn{background: #ffffff;color:#000000;}
+.button_section .find_btn{background-color:transparent; color:#ffffff;border: 1px solid #ffffff;}
+.button_section .shop_btn:hover,.offer_catalouge .shop_btn:hover,.special_banner .shop_btn:hover{background-color: #000000;color: #ffffff;}
+.button_section .find_btn:hover{background-color: #ffffff;color: #000000;}
+.banner_background::before{content: "";top: 0;left: 0;width: 100%;display: block;position: absolute;background-color: rgba(18, 18, 18, 0.5);min-height: 445px;}
+/* banner section end */
+/* brand slider start */
+.brand_slider{margin:0px auto;width:100%;max-width:1200px;padding: 80px 0px;}
+.brand_slider .slick-next:before,.brand_slider .slick-prev:before{color: #aaa4a4;}
+/* brand slider end */
+/* offer catalouge section start */
+.women_catalouge_offer,.men_catalouge_offer,.footware_catalouge_offer{background-image: url(../images/catalogue_1.jpg);padding:40px;display: flex;justify-content: end;flex-direction: column;        background-position: top right;background-repeat: no-repeat;background-size: cover;position: relative;min-height:385px;}
+.men_catalouge_offer{background-image: url(../images/catalogue_2.jpg);background-position: left;}
+.footware_catalouge_offer{background-image: url(../images/catalogue_3.jpg);}
+.offer_catalouge{display: flex;column-gap: 20px;width: 100%;max-width: 1200px;margin: 0px auto;}
+.offer_catalouge h2{font-size:26px;font-style: normal;font-weight:700;line-height: 30px; color: #ffffff;}
+.offer_catalouge p{font-size:16px;font-style: normal;font-weight:400;line-height: 20px; color: #ffffff;}
+.women_catalouge_offer::before,.men_catalouge_offer::before,.footware_catalouge_offer::before{content: "";top: 0;left: 0;width: 100%;display: block;position: absolute;background-color: rgba(18, 18, 18, 0.5);height: 465px;}
+.catalogue_details,.content_section{z-index:9;position: relative;}
+/* offer catalouge section end */
+/* security information start */
+.security_information_section{display: flex; width:100%;max-width: 1200px;margin: 0px auto 60px auto;text-align: center;}
+.security_information_section h3{font-size:18px;line-height:23px;font-style:normal;font-weight :700;margin-bottom:12px;}
+.security_information_section p{font-size :14px;line-height:18px;font-style :normal;font-weight :400;}
+.security_information_section img{width: 65px;height:65px;}
+/* security information end */
+/* special banner section start */
+.special_banner{background-image: url(../images/special_banner.jpg);background-position: center center;background-repeat: no-repeat;background-size: cover;color: #ffffff;padding: 100px;margin: 60px;}
+.special_banner h3{font-size:20px;font-style:normal;font-weight:700 ;line-height:24px;margin:20px 0px;}
+.special_banner h4{font-size:42px;font-style:normal;font-weight :700;margin: 20px 0px;}
+.special_banner p{font-size :16px;font-style :normal;font-weight :400;line-height: 23px;}
+/* special banner section end */
+/* footer section start */
+.copyright_content{text-align: center;border-top: 1px solid #c0c0c0;padding: 20px;font-size: 15px;line-height: 22px;}
+/* footer section end */
+/* reponsive  start*/
+@media(max-width:1250px){
+/* common space for all section*/
+.security_information_section ,.offer_catalouge,.brand_slider,.content_section{max-width: 95%;}
+/* common space for all section*/
+}
+@media (max-width:991px) {
+/* banner section start */
+.content_section h1 {font-size: 45px;line-height: 51px;}
+.content_section p {font-size: 20px;line-height: 25px;}
+.button_section a, .offer_catalouge a, .special_banner a {font-size: 12px; line-height:16px;padding: 13px 18px;}
+/* banner section end */
+/* brand slider section start */
+.brand_slider{padding: 45px 0px;}
+.slick-dots li button:before{font-size: 15px !important;}
+.slick-dots{margin-bottom: 20px !important;}
+/* brand slider section end*/
+/* offer catalouge section start */
+.offer_catalouge{display: block;}
+.women_catalouge_offer,.men_catalouge_offer{width: 37%;display: inline-block;margin:9.5px;}
+.men_catalouge_offer{margin-left: -4px;}
+.footware_catalouge_offer{width:37%;margin: 9.5px;}
+/* offer catalouge section end */
+/* special banner section start */
+.special_banner h4 {font-size: 35px;line-height:40px;}
+.special_banner{margin: 32px;}
+/* special banner section end */
+/* security information start */
+.security_information_section img {width: 50px; height: 50px;}
+.security_information_section h3 {font-size: 15px;line-height: 20px;}
+.security_information_section p {font-size: 13px;line-height: 15px;}
+/* security information end*/
+}
+@media (max-width:767px){
+/* banner section start */
+.banner_background{display: table;width: 100%;text-align: center;}
+.content_section{display: table-cell;vertical-align: middle;}
+.content_section h1{width: unset;}
+/* banner section end */
+/* common space for all section*/
+.security_information_section, .offer_catalouge, .brand_slider, .content_section{max-width: 100%;}
+/* common space for all section*/
+/* offer catalouge section start */
+.women_catalouge_offer, .men_catalouge_offer,.footware_catalouge_offer{width: 82%;margin: 0px auto;}
+.men_catalouge_offer{margin: 20px 0px;}
+.offer_catalouge{text-align: center;}
+/* offer catalouge section end */
+/* security information start */
+.security_information_section{display: block;}
+/* security information end*/
+/* special banner section start */
+.special_banner{padding: 20px;}
+/* special banner section end */
+}
+@media (max-width:550px) {
+/* banner section start */
+.content_section h1 {font-size: 35px;line-height: 40px;}
+/* banner section end */
+/* offer catalouge section start */
+.women_catalouge_offer, .men_catalouge_offer,.footware_catalouge_offer {width: 67%;}
+/* offer catalouge section end */
+}
+@media (max-width:390px){
+/* special banner section start */
+.special_banner h3{font-size: 13px;line-height: 20px;}
+.special_banner h4 {font-size: 25px;line-height: 30px;}
+.special_banner p{font-size: 12px;line-height: 17px;}
+/* special banner section end */
+}
+/* responsive  end*/
