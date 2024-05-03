@@ -1,3 +1,4 @@
+// slider for brand section 
 $(document).ready(function(){
   $('.brand_slider').slick({
     slidesToShow: 5,
